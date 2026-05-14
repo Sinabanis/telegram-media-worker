@@ -68,7 +68,7 @@ jobs:
       image: ghcr.io/amd4x/tg-video-worker:latest
       credentials:
         username: ${{ github.actor }}
-        password: ${{ secrets.CR_PAT }}
+        password: ${{ secrets.GITHUB_TOKEN }}
 
     defaults:
       run:
